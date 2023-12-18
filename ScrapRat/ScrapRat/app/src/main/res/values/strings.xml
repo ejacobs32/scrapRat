@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ScrapRat</string>
+    <string name="help">
+        -- Scrap Rat -- \n
+        In this game you play as an entrepreneurial rat who really likes money.
+        Your goal is to get the highest net worth that you can. You achieve this in the typical way,
+        by selling products! Though being a rat, you only have one option.
+        You have to sell trash to literally anyone who will buy it.
+        You get trash by finding it or buying it from other rats.
+        How much money can a little rat get?
+
+
+        \n\n-- How to Play --\n
+        Your hoard shows the number of items you own.
+        Net worth shows how much money you own.
+        The top 3 buttons shows trash that you can buy.
+        Bellow that are 3 buttons that show trash which you can sell.
+        Note that not all transactions are worth it. Be discerning which offers you take.
+        Every so often you can press the salvage button to gain 1 free piece of trash.
+
+
+        \n\n-- Credits --\n
+        Project for Ivy Tech community collage.
+        Programing - by Enoch E. Jacobs
+        Art - by Enoch E. Jacobs
+    </string>
+</resources>

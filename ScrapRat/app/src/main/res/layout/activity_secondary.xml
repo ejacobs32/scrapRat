@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0078B4"
+    tools:context=".SecondaryActivity">
+
+    <Button
+        android:id="@+id/button_salvege"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Salvege"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/splash_image"
+        android:layout_width="266dp"
+        android:layout_height="374dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_net_worth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ratgreen" />
+
+    <ImageButton
+        android:id="@+id/imageButton_home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_style"
+        android:backgroundTint="#673AB7"
+        android:onClick="homeBTNclick"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_home_24" />
+
+    <TextView
+        android:id="@+id/textView_hoardbox"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/round_style"
+        android:backgroundTint="#bababa"
+        android:paddingTop="50dp"
+        android:text="Hoard:"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/constraintlayout2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintlayout2"
+        android:layout_width="386dp"
+        android:layout_height="131dp"
+        android:background="#25000000"
+        app:layout_constraintBottom_toTopOf="@+id/constraintlayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView_buttonStyle"
+            android:layout_width="93dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="32dp"
+            android:text="Buy Junk:"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/buyjunk1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/round_style"
+            android:backgroundTint="#673AB7"
+            android:contextClickable="false"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516"
+            app:srcCompat="@drawable/trash0" />
+
+        <ImageButton
+            android:id="@+id/buyjunk2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/round_style"
+            android:backgroundTint="#673AB7"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buyjunk3"
+            app:layout_constraintStart_toEndOf="@+id/buyjunk1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516"
+            app:srcCompat="@drawable/trash0" />
+
+        <ImageButton
+            android:id="@+id/buyjunk3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/round_style"
+            android:backgroundTint="#673AB7"
+            android:contentDescription="buy junk 3"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.483"
+            app:srcCompat="@drawable/trash0" />
+
+        <TextView
+            android:id="@+id/buyjunk_price1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#80000000"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/buyjunk1"
+            app:layout_constraintEnd_toEndOf="@+id/buyjunk1"
+            app:layout_constraintStart_toStartOf="@+id/buyjunk1" />
+
+        <TextView
+            android:id="@+id/buyjunk_price2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#80000000"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/buyjunk2"
+            app:layout_constraintEnd_toEndOf="@+id/buyjunk2"
+            app:layout_constraintStart_toStartOf="@+id/buyjunk2" />
+
+        <TextView
+            android:id="@+id/buyjunk_price3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#80000000"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/buyjunk3"
+            app:layout_constraintEnd_toEndOf="@+id/buyjunk3"
+            app:layout_constraintStart_toStartOf="@+id/buyjunk3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintlayout"
+        android:layout_width="386dp"
+        android:layout_height="131dp"
+        android:background="#25000000"
+        app:layout_constraintBottom_toTopOf="@+id/button_salvege"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView_selljunk"
+            android:layout_width="93dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="32dp"
+            android:text="Sell Junk:"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/selljunk1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/round_style"
+            android:backgroundTint="#673AB7"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516"
+            app:srcCompat="@drawable/trash0" />
+
+        <ImageButton
+            android:id="@+id/selljunk2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/round_style"
+            android:backgroundTint="#673AB7"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/selljunk3"
+            app:layout_constraintStart_toEndOf="@+id/selljunk1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/trash0" />
+
+        <ImageButton
+            android:id="@+id/selljunk3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/round_style"
+            android:backgroundTint="#673AB7"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.483"
+            app:srcCompat="@drawable/trash0" />
+
+        <TextView
+            android:id="@+id/selljunk_price1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#80000000"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/selljunk1"
+            app:layout_constraintEnd_toEndOf="@+id/selljunk1"
+            app:layout_constraintStart_toStartOf="@+id/selljunk1" />
+
+        <TextView
+            android:id="@+id/selljunk_price2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#80000000"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/selljunk2"
+            app:layout_constraintEnd_toEndOf="@+id/selljunk2"
+            app:layout_constraintStart_toStartOf="@+id/selljunk2" />
+
+        <TextView
+            android:id="@+id/selljunk_price3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#80000000"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/selljunk3"
+            app:layout_constraintEnd_toEndOf="@+id/selljunk3"
+            app:layout_constraintStart_toStartOf="@+id/selljunk3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/hoardcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/textView_hoardbox"
+        app:layout_constraintStart_toStartOf="@+id/textView_hoardbox"
+        app:layout_constraintTop_toTopOf="@+id/textView_hoardbox" />
+
+    <TextView
+        android:id="@+id/networth"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:background="@drawable/round_style"
+        android:backgroundTint="#bababa"
+        android:paddingTop="16dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintlayout2"
+        app:layout_constraintEnd_toEndOf="@+id/constraintlayout2" />
+
+    <TextView
+        android:id="@+id/textView_net_worth"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/mild_round_style"
+        android:backgroundTint="@color/gray"
+        android:contentDescription="Total net worth"
+        android:includeFontPadding="false"
+        android:outlineAmbientShadowColor="#A53C3C"
+        android:paddingTop="10dp"
+        android:text="Net Worth"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/networth"
+        app:layout_constraintEnd_toEndOf="@+id/networth"
+        app:layout_constraintStart_toStartOf="@+id/networth" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
